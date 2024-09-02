@@ -1,8 +1,7 @@
 spring:
-#spring:
-#  config:
-#    activate:
-#      on-profile: dev
+  config:
+    activate:
+      on-profile: dev
   datasource:
     url: jdbc:postgresql://localhost:5432/userdb
     username: admin
@@ -15,4 +14,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
