@@ -1,6 +1,7 @@
 spring:
   application:
-
+  profiles:
+    active: dev
     name: user-service
 user:
   test:
