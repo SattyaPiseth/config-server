@@ -1,32 +1,20 @@
-server:
-  port: 8081
 spring:
+  config:
+    activate:
+      on-profile: dev
   datasource:
-    driver-class-name: org.postgresql.Driver  
     url: jdbc:postgresql://localhost:5432/userdb
     username: admin
     password: admin@123
   jpa:
-    database: POSTGRESQL
-    show-sql: true
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
+server:
+  port: 8081
 eureka:
-  instance:
-    prefer-ip-address: true
-  client: 
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
+  client:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka
 user:
   test:
-    property: dev-value
-info:
-  application:
-    name: 'user-service'
-    description: 'this is Service that using to get information user owner'
-    version: '1.0.0'        
+    property: dev-value    
