@@ -19,4 +19,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 user:
   test:
-    property: dev-value    
+    property: dev-value-devops   
