@@ -39,4 +39,4 @@ eureka:
       defaultZone: http://eureka-server:8761/eureka
 user:
   test:
-    property: dev-value    
+    property: dev-value-devops   
