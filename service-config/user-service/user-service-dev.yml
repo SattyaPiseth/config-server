@@ -23,9 +23,9 @@ spring:
   #   activate:
   #     on-profile: dev
   datasource:
-    url: jdbc:postgresql://159.223.38.211:5432/userdb
-    username: admin
-    password: admin@123
+    url: jdbc:postgresql://postgres:5432/user-service
+    username: root
+    password: r00t@123!
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
